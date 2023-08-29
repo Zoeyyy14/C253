@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "Zoey Ma",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 128.07,
+      "left": -52.67,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 73.4,
+      "left": -53.33,
+      "attrs": { "color": "blue" }
+    }
+  ],
+  "connections": [
+    [ "btn2:1.r", "uno:4", "green", [ "v0" ] ],
+    [ "btn2:2.l", "uno:GND.1", "blue", [ "h0" ] ],
+    [ "btn1:1.r", "uno:4", "yellow", [ "v0" ] ],
+    [ "btn1:2.l", "uno:GND.1", "yellow", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
